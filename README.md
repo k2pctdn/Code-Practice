@@ -1,10 +1,10 @@
-# primenumber
+# Prime Number Check
 
 Checking whether a number is prime or not
 
 ## The Algorithm
 
-https://en.wikipedia.org/wiki/Primality_test
+Check out this [Primality Test](https://en.wikipedia.org/wiki/Primality_test)
 
 ## Change log
 
