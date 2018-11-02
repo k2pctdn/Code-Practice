@@ -9,7 +9,7 @@ def prime(n):
             if n % i == 0:
                 return False
         return True
-
+# xoa dong 2
 x = int(input("Please type a natural number: "))
 print('Check prime status: ',prime(x))
 if prime(x):
