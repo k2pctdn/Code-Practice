@@ -12,7 +12,7 @@ def prime(n):
                 return False
         return True
 
-x = int(input("Please type a positive integer: "))
+x = int(input("Please type a natural number: "))
 print('Check prime status: ',prime(x))
 if prime(x):
     print(x, 'is a prime number.')
