@@ -4,8 +4,6 @@ def prime(n):
         return False
     elif n == 2:
         return True
-    elif n % 2 == 0:
-        return False
     else:
         for i in range(2,int(math.sqrt(n))+1):
             if n % i == 0:
