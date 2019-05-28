@@ -1,6 +1,11 @@
 import math
 
 
+def get_input():
+    x = int(input("Please type a natural number: "))
+    return x
+
+
 def prime(n):
     if n < 1:
         return False
@@ -13,10 +18,25 @@ def prime(n):
         return True
 
 
-x = int(input("Please type a natural number: "))
+def body(n):
+    print('Check prime status: ', prime(n))
+    if prime(n):
+        print(n, 'is a prime number.')
+    else:
+        print(n, 'is not a prime number')
 
-print('Check prime status: ', prime(x))
-if prime(x):
-    print(x, 'is a prime number.')
-else:
-    print(x, 'is not a prime number')
+
+def checkpoint():
+    y = (input('Check more number? Y/N: '))
+    if y == 'N' or y == 'n':
+        return False
+    else:
+        return True
+
+
+check = True
+
+while check:
+    body(get_input())
+    check = checkpoint()
+    print(check)
